@@ -1,0 +1,78 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "User defined.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HeD8NIW0iQO2",
+        "outputId": "943584cd-b9c3-428d-f236-5fdc8269ee81"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The square of the number is: 81\n"
+          ]
+        }
+      ],
+      "source": [
+        "def square(num):\n",
+        "    \"\"\"This function computes the square of the number.\"\"\"\n",
+        "    return num**2\n",
+        "object_=square(9)\n",
+        "print(\"The square of the number is:\", object_)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def square(my_list):\n",
+        "    \"\"\"this function will find the square of item in list \"\"\" \n",
+        "    squares=[]\n",
+        "    for l in my_list:\n",
+        "      squares.append(l**2)\n",
+        "    return squares\n",
+        "#calling the defined function\n",
+        "list_=[45,52,13];\n",
+        "result =square(list_)\n",
+        "print(\"square of the list is:\",result)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w-tmvv6_jgbC",
+        "outputId": "d664425c-c6ce-487a-f501-84d8fa5db419"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "square of the list is: [2025, 2704, 169]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
